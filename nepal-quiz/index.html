@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nepal Quiz - Test Your Knowledge</title>
+    <!--- Google fonts link to here-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <!--- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!--- Style CSS link to here-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+      <!-- Start Screen -->
+      <div class="screen active" id="start-screen">
+        <div class="flag-icon">🇳🇵</div>
+        <h1>Nepal Quiz</h1>
+        <p>Test your knowledge about the beautiful country of Nepal!</p>
+        <button id="start-btn">
+          <i class="fas fa-play"></i> Start Quiz
+        </button>
+      </div>
+
+      <!-- Quiz Screen -->
+      <div class="screen" id="quiz-screen">
+        <div class="quiz-header">
+          <div class="quiz-info">
+            <div class="info-card">
+              <i class="fas fa-question-circle"></i>
+              <span id="current-question">1</span> / <span id="total-questions">5</span>
+            </div>
+            <div class="info-card">
+              <i class="fas fa-star"></i>
+              <span id="score">0</span> points
+            </div>
+          </div>
+        </div>
+        
+        <h2 id="question-text">Question goes here</h2>
+        
+        <div id="answer-container" class="answer-container">
+          <!-- Answer buttons will be generated here -->
+        </div>
+        
+        <div class="progress-bar">
+          <div id="progress" class="progress"></div>
+        </div>
+      </div>
+
+      <!-- Result Screen -->
+      <div id="result-screen" class="screen">
+        <div class="result-icon">🏆</div>
+        <h1>Quiz Results</h1>
+        <div class="result-info">
+          <p>Your final score is:</p>
+          <div class="final-score">
+            <span id="final-score">0</span>
+            <span class="out-of">/<span id="max-score">5</span></span>
+          </div>
+          <div id="result-message">Good job!</div>
+          <button id="restart-btn">
+            <i class="fas fa-redo-alt"></i> Restart Quiz
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!--- Script JS link -->
+    <script src="script.js"></script>
+  </body>
+</html>
